@@ -7,4 +7,4 @@ for i in alpabet:
 for i in range(len(result)):
     result[i] = result[i] * 31 ** i
     res += result[i]
-print(res)
+print(res%1234567891)
