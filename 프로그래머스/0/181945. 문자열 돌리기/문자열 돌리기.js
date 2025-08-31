@@ -4,7 +4,9 @@ const rl = readline.createInterface({
     output: process.stdout
 }).on('line', function (line) {
     let str = [line][0];
-    for (let i = 0; i < str.length; i++) {
-        console.log(str[i]);
-    }
+    [...str].forEach((c) => console.log(c));
+    // ... str을 모두 포함 a b c d e, [...str] -> ["a", "b", "c", "d", "e"]
+    // forEach 메서드는 ((c) => console.log(c)) 각 배열 요소에 대해 함수를 한 번씩 실행
+
+
 })
