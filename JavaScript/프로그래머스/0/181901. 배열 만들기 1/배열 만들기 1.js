@@ -1,9 +1,7 @@
 function solution(n, k) {
     let arr = [];
-    for (let i = 1; i <= n; i++) {
-        if (i % k === 0) {
-            arr.push(i);
-        }
+    for (let i = k; i <= n; i+=k) {
+        arr.push(i);
     }
     return arr
 }
