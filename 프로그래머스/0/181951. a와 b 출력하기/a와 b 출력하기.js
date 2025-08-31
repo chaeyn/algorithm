@@ -3,7 +3,7 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 }).on('line', function (line) {
-    input = line.split(' ');
-    console.log(`a = ${input[0]}`);
-    console.log(`b = ${input[1]}`);
+    const [a, b] = line.split(' ');
+    console.log(`a = ${a}`);
+    console.log(`b = ${b}`);
 })
