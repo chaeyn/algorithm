@@ -4,7 +4,5 @@ const rl = readline.createInterface({
     output: process.stdout
 }).on('line', function (line) {
     let [a, b] = line.split(' ');
-    a = +a
-    b = +b
-    console.log(`${a} + ${b} = ${a+b}`)
+    console.log(`${a} + ${b} = ${Number(a)+Number(b)}`)
 })
