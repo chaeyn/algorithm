@@ -8,6 +8,4 @@ for _ in range(capacity):
     else:
         top += 1
         array[top] = n
-for i in array[0:top+1]:
-    res += i
-print(res)
+print(sum(array[0:top+1]))
